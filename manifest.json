@@ -1,0 +1,15 @@
+{
+  "name": "Quotoot",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Qiitadon用 引用 toot Chrome 機能拡張",
+  "content_scripts": [{
+    "matches": ["https://qiitadon.com/web/*"],
+    "js": [
+      "main.js"
+    ],
+    "css": [
+      "style.css"
+    ]
+  }]
+}

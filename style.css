@@ -1,0 +1,80 @@
+p {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+.toot {
+	display: flex;
+	width: 95%;
+  white-space: normal;
+
+  /*区切り線のスタイル*/
+  border: solid 1px #c0c0c0;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.container {
+	display: flex;
+}
+
+.box:last-of-type {
+	padding-left: 10px;
+  flex-grow: 1;
+}
+
+.box img {
+  border-radius: 5px;
+  float: left;
+}
+
+.e-content p {
+	word-break: break-word;
+}
+
+img.emoji {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+img.thumbs {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.toot-time {
+	font-weight: bold;
+	color: inherit;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.toot-time:hover {
+	text-decoration: underline currentColor;
+}
+
+.toot-time {
+	font-weight: normal;
+	color: #c0c0c0;
+	font-size: smaller;
+}
+
+.display-name span:before, .toot-time:before {
+	white-space: pre-wrap; 
+	content: "  ";
+}
+
+.u-photo {
+  display: inline-block;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
