@@ -1,4 +1,4 @@
-# Qiitadon用引用Toot Chrome機能拡張
+# Qiitadon用 引用Toot Chrome機能拡張
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE.md)
 [![VanillaJS](https://img.shields.io/badge/Framework-VanillaJS-blue.svg)](https://nodejs.org/ja/)
@@ -21,4 +21,6 @@
 ## ToDo
 
 - [x] 新着のtootに適用されない
-- [ ] ligth テーマでスタイルが崩れる
+- [x] ligth テーマでスタイルが崩れる
+- [ ] ligth テーマ変更直後でスタイルが崩れる（Qiitadon をリロードすれば直る）
+- [ ] 複数の引用がある場合、最後のリンクのみが有効になる
