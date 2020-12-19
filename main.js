@@ -72,6 +72,7 @@ function createTootDiv(toot) {
 	const spoiler_text = toot.spoiler_text != undefined ? `<p>${toot.spoiler_text}</p>` : "";
 	const blur = toot.sensitive ? "sensitive" : "";
 	const contentHtml = document.createElement("div").innerHTML = `<div class='${blur}'>${strContent.trim()}</div>`;
+	const name = toot.account.display_name ? toot.account.display_name.trim() : `@${toot.account.username}`;
 	const media = toot.media_attachments
 		.map(attachment => `<p><a href='${attachment.url}' target='_blank' rel='noopener noreferrer'><img class='thumbs ${blur}' src='${attachment.preview_url}'></a></p>`)
 		.join("");
@@ -81,8 +82,7 @@ function createTootDiv(toot) {
 		<img width="48" height="48" alt="avatar" class="inner-u-photo" src="${toot.account.avatar}">
 	</a>
 	<a class="inner-display-name" href="${toot.account.url}">
-		${toot.account.display_name.trim()}
-		<!--<span>@${toot.account.username}@${new URL(toot.account.url).hostname}</span>-->
+		${name}
 	</a>
 	<div class="inner-e-content" lang="ja">
 		${spoiler_text}${contentHtml}
